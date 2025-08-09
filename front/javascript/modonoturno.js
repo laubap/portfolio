@@ -1,6 +1,6 @@
 const themeButton = document.querySelector('.theme__icon');
 
-themeButton.addEventListener('click', () => {
+  themeButton.addEventListener('click', () => {
   document.body.classList.toggle('modo-noturno');
 
   const menu = document.querySelector('.menu-lateral');

@@ -1,14 +1,14 @@
 .menu-lateral {
-     display: none; /* esconde o menu */
-  position: fixed;      /* fixa na tela */
+     display: none; 
+  position: fixed;      
   top: 0;
-  left: 0;             /* fixa na esquerda */
-  height: 100vh;       /* 100% da altura da viewport */
-  width: 200px;        /* largura do menu */
-  background-color: #a395b9;  /* cor de fundo escura */
+  left: 0;            
+  height: 100vh;       
+  width: 200px;       
+  background-color: #a395b9; 
   padding-top: 20px;
   box-sizing: border-box;
-  overflow-y: auto;    /* caso tenha muitos itens, permite scroll */
+  overflow-y: auto;    
   z-index: 1000;
 }
 
@@ -18,8 +18,8 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza horizontalmente os itens dentro da ul */
-  gap: 12px; /* espaço entre os itens do menu */
+  align-items: center; 
+  gap: 12px; 
 }
 
 .menu-lateral li {
@@ -41,14 +41,14 @@
 }
 
 .menu-lateral.tema-escuro {
-  background-color: #0e0241; /* Cor escura para modo noturno */
+  background-color: #0e0241; 
 }
 
 /* BOTAO MENU */
 
 .btn-class-name {
- --primary: 232, 182, 172;   /* rosa claro */
---secondary: 210, 100, 100; /* rosa médio/forte */
+ --primary: 232, 182, 172;   
+--secondary: 210, 100, 100; 
   width: 60px;
   height: 50px;
   border: none;
@@ -60,16 +60,16 @@
   border-radius: 100%;
   position: relative;
   transition: .3s;
-    position: fixed; /* fixa no canto da tela */
-  top: 20px;       /* distância do topo */
-  left: 20px;      /* distância da esquerda */
+  position: fixed; 
+  top: 20px;       
+  left: 20px;     
   z-index: 1000;
 }
 
 
 .btn-class-name.tema-escuro {
- --primary: 173, 216, 230;   /* azul claro */
-  --secondary: 0, 51, 153;    /* azul forte */
+ --primary: 173, 216, 230;   
+  --secondary: 0, 51, 153;    
   width: 60px;
   height: 50px;
   border: none;
@@ -81,9 +81,8 @@
   border-radius: 100%;
   position: relative;
   transition: .3s;
-    position: fixed; /* fixa no canto da tela */
-  top: 20px;       /* distância do topo */
-  left: 20px;      /* distância da esquerda */
+    position: fixed;
+  left: 20px;      
   z-index: 1000;
 }
 
@@ -155,5 +154,5 @@
 }
 
 .menu-lateral.ativo {
-  display: block; /* mostra o menu quando .ativo está presente */
+  display: block; 
 }
