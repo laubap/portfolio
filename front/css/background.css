@@ -1,0 +1,54 @@
+/* background.css */
+
+/* Remove margens e faz o fundo acompanhar o conteúdo */
+body {
+  margin: 0;
+  background-image: url('../imagens/background.jpg');
+  background-size: cover;        /* cobre toda a área */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;              /* pelo menos altura da tela */
+}
+
+/* Container centralizado */
+.container {
+  max-width: 900px;              /* largura máxima */
+  margin: 0 auto;                /* centraliza horizontalmente */
+  padding: 20px;                  /* espaçamento interno */
+  color: white;                   /* cor do texto */
+}
+
+/* Texto justificado */
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Centraliza títulos */
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+body.modo-noturno {
+  margin: 0;
+  background-image: url('../imagens/nuvemescura.jpeg');
+  background-size: cover;        /* cobre toda a área */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+}
+
+.traduzir-btn {
+  font-size: 1.1rem;      /* aumenta o texto levemente */
+  color: white;           /* deixa o texto branco */
+  background-color: transparent; /* opcional: botão sem fundo */
+  border: 1px solid white;      /* opcional: borda branca */
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.traduzir-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* hover suave */
+}

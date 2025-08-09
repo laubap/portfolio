@@ -1,0 +1,159 @@
+.menu-lateral {
+     display: none; /* esconde o menu */
+  position: fixed;      /* fixa na tela */
+  top: 0;
+  left: 0;             /* fixa na esquerda */
+  height: 100vh;       /* 100% da altura da viewport */
+  width: 200px;        /* largura do menu */
+  background-color: #a395b9;  /* cor de fundo escura */
+  padding-top: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;    /* caso tenha muitos itens, permite scroll */
+  z-index: 1000;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente os itens dentro da ul */
+  gap: 12px; /* espaço entre os itens do menu */
+}
+
+.menu-lateral li {
+  margin: 20px 0;
+}
+
+.menu-lateral a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.menu-lateral a:hover {
+
+  background-color: rgba(232, 182, 172, 0.4); 
+}
+
+.menu-lateral.tema-escuro {
+  background-color: #0e0241; /* Cor escura para modo noturno */
+}
+
+/* BOTAO MENU */
+
+.btn-class-name {
+ --primary: 232, 182, 172;   /* rosa claro */
+--secondary: 210, 100, 100; /* rosa médio/forte */
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: relative;
+  transition: .3s;
+    position: fixed; /* fixa no canto da tela */
+  top: 20px;       /* distância do topo */
+  left: 20px;      /* distância da esquerda */
+  z-index: 1000;
+}
+
+
+.btn-class-name.tema-escuro {
+ --primary: 173, 216, 230;   /* azul claro */
+  --secondary: 0, 51, 153;    /* azul forte */
+  width: 60px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  outline: 10px solid rgb(var(--primary), .5);
+  border-radius: 100%;
+  position: relative;
+  transition: .3s;
+    position: fixed; /* fixa no canto da tela */
+  top: 20px;       /* distância do topo */
+  left: 20px;      /* distância da esquerda */
+  z-index: 1000;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .back .tema-escuro {
+  background: rgb(var(--secondary));
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name .front.tema-escuro {
+  background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+  box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid rgb(var(--secondary));
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transform: translateY(-15%);
+  transition: .15s;
+  color: rgb(var(--secondary));
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0%);
+  box-shadow: 0 0;
+}
+
+.menu-lateral.ativo {
+  display: block; /* mostra o menu quando .ativo está presente */
+}
